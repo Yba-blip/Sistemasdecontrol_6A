@@ -1,0 +1,33 @@
+<html>
+ <title> Mejores bandas </title>
+      <body>
+     <table>
+
+
+  
+           <th> Banda </th>
+           <th> Cantante </th>
+           <th> Genero </th>
+     
+
+     <tr>
+           <td> Imagine Dragons </td>
+           <td>  Dan Reynolds</td>
+           <td> Alternativa </td>
+      </tr>
+
+      <tr>
+           <td> Soda Estereo </td>
+           <td> Gustavo Cerati </td>
+           <td> Rock Alternativo </td> 
+      </tr>
+
+       <tr>
+           <td> One Direction </td>
+           <td> Harry Styles </td>
+           <td> Pop </td>
+      </tr>
+ 
+       </table>
+    </body>
+</html>
