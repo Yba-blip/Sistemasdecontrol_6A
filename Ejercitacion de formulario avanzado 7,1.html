@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>Rellena tu CV</title>
+</head>
+
+<body>
+
+<h3>Rellena tu CV</h3>
+
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+<legend>Datos personales</legend>
+
+<label for="provincia">Provincia</label><br/>
+<select id="provincia" name="provincia">
+<option value="" selected="selected">- selecciona -</option>
+<option value="01">Buenos Aires</option>
+<option value="02">Catamarca</option>
+<option value="03">Chaco</option>
+<option value="04">Chubut</option>
+<option value="05">Cordoba</option>
+<option value="06">Corrientes</option>
+<option value="07">Entre Rios</option>
+<option value="08">Formosa</option>
+<option value="09">Jujuy</option>
+<option value="10">La Pampa</option>
+<option value="11">La Rioja</option>
+<option value="12">Mendoza</option>
+<option value="13">Misiones</option>
+<option value="14">Neuquen</option>
+<option value="15">Rio Negro</option>
+<option value="16">Salta</option>
+<option value="17">San Juan</option>
+<option value="18">San Luis</option>
+<option value="19">Santa Cruz</option>
+<option value="20">Santa Fe</option>
+<option value="21">Santiago del Estero</option>
+<option value="22">Tierra del Fuego,antartida e Islas del Atlantico</option>
+<option value="23">Tucuman</option>
+</select>
+
+<br/><br/>
+
+<label for="fecha_dia">Fecha de nacimiento</label><br/>
+<input type="text" size="3" maxlength="2" id="fecha_dia" name="fecha_dia" />
+  de
+<select id="fecha_mes" name="fecha_mes">
+<option value="1">Enero</option>
+<option value="2">Febrero</option>
+<option value="3">Marzo</option>
+<option value="4">Abril</option>
+<option value="5">Mayo</option>
+<option value="6">Junio</option>
+<option value="7">Julio</option>
+<option value="8">Agosto</option>
+<option value="9">Septiembre</option>
+<option value="10">Octubre</option>
+<option value="11">Noviembre</option>
+<option value="12">Diciembre</option>
+</select>
+  de
+<input type="text" size="5" maxlength="4" id="fecha_ano" name="fecha_ano" />
+
+<br/><br/>
+
+<label for="temasDeInteres">Temas de interés</label><br/>
+<select multiple="multiple" size="5" id="temasDeInteres" name="temasDeInteres">
+<option value="3105">Administración de bases de datos</option>
+<option value="3106">Análisis y programación</option>
+<option value="3107">Arquitectura</option>
+<option value="3108">Calidad</option>
+<option value="3109">ERP, CRM, Business Intelligence</option>
+<option value="3110">Gestión de proyectos</option>
+<option value="3111">Hardware, redes y seguridad</option>
+<option value="3112">Helpdesk</option>
+<option value="3113">Sistemas</option>
+<option value="3114">Telecomunicaciones</option>
+</select>
+</fieldset>
+
+</form>
+
+</body>
+
+</html>
