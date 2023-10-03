@@ -1,18 +1,33 @@
 <html>
+
 <body>
+
 <script languaje= "jacascript" type= "text/javascript">
+
 function calculo IMC () {
 var peso = number ( prompt ("ingrese peso"))
 var altura = number ( prompt ("ingrese altura"))
-var IMC= peso / altura * altura
+
+var IMC= peso / altura * altura}
+
 if ( IMC > 30) 
+
               alert(""obesidad grado 2"IMC"=+IMC )
+
 else if ( IMC > 25)
+
               alert (""obesidad grado 1"IMC"=+IMC)
+
 else if ( IMC > 17.9 )
+
 alert (""peso saludable"IMC"=+IMC)
+
 </script>
+
 <imput type= "button" onclick= "calculoIMC()"
+
 value= "calcule IMC"/>
+
+ <br>     <a href= "https://yba-blip.github.io/Sistemasdecontrol_6A/index.html"> Volver </a> </br>
 </body>
 </html>
