@@ -1,7 +1,7 @@
 <html>
 <body>
-<script>
-function
+<script languaje= "jacascript" type= "text/javascript">
+function calculo IMC () {P/h*h}
 var= number ( prompt ("pone un numero")
 </script>
 </body>
