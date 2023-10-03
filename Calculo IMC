@@ -23,7 +23,7 @@ else if ( IMC > 17.9 )
 alert (""peso saludable"IMC"=+IMC);
 
 else
-alert ("debajo del peso");}
+    alert ("debajo del peso");}
 
 </script>
 
