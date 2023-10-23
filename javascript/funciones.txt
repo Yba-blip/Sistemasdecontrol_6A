@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function hypotenuse(a, b) {
+ function square(x) { return x*x; }
+
+ return Math.sqrt(square(a) + square(b));
+}
+function secondFunction(){
+ var result;
+ result = hypotenuse(1,2);
+ document.write ( result );
+}
+//-->
+</script>
+</head>
+<body>
+<p>Click el following button para usar la funcion</p>
+<form>
+<input type="button" onclick="secondFunction()" value="Call Function">
+</form>
+<p>Usa diferentes parametros</p>
+</body>
+</html>
