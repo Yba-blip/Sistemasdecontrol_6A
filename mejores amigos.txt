@@ -1,0 +1,30 @@
+<html>
+ 
+      <body>
+       <h1> Mejores amigos </h1>
+     <table>
+
+
+  
+           <th> Amigos </th>
+         
+ 
+     <tr>
+           <td> Martin </td>
+    
+      </tr>
+
+      <tr>
+           <td> Valen </td>
+       
+      </tr>
+
+       <tr>
+           <td> Nicolas </td>
+       
+      </tr>
+ 
+       </table>
+        <br>     <a href= "https://yba-blip.github.io/Sistemasdecontrol_6A/index.html"> Volver </a> </br>
+    </body>
+</html>
