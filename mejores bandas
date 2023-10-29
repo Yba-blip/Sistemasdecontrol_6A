@@ -1,0 +1,32 @@
+<html>
+
+      <body>
+       <h1> Mejores Bandas </h1>
+     <table>
+  
+           <th> Banda </th>
+           <th> Cantante </th>
+           <th> Genero </th>
+     
+
+     <tr>
+           <td> Imagine Dragons </td>
+           <td>  Dan Reynolds</td>
+           <td> Alternativa </td>
+      </tr> 
+           
+      <tr>
+           <td> Soda Estereo </td>
+           <td> Gustavo Cerati </td>
+           <td> Rock Alternativo</br> </td> 
+      </tr>
+       <tr>
+           <td> One Direction</br> </td>
+           <td> Harry Styles </td>
+           <td> Pop </td>
+      </tr>
+ 
+       </table>
+           <br>  <a href= "https://yba-blip.github.io/Sistemasdecontrol_6A/index.html"> Volver </a> </br>
+    </body>
+</html>
