@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Calculadora de Impedancia</title>
+</head>
+<body>
+  <h1>Calculadora de Impedancia</h1>
+  <form id="impedanceForm">
+    <label for="resistencia">R (Resistencia):</label>
+    <input type="number" id="resistencia" required><br>
+
+    <label for="inductancia">L (Inductancia):</label>
+    <input type="number" id="inductancia" required><br>
+
+    <label for="capacitancia">C (Capacitancia):</label>
+    <input type="number" id="capacitancia" required><br>
+
+    <label for="frecuencia">Frecuencia (F):</label>
+    <input type="number" id="frecuencia" required><br>
+
+    <input type="submit" value="Calcular">
+  </form>
+
+  <h2>Resultados:</h2>
+  <p id="xlResult"></p>
+  <p id="xcResult"></p>
+  <p id="modZResult"></p>
+  <p id="phiResult"></p>
+  <p id="reZResult"></p>
+  <p id="imZResult"></p>
+
+  <script>
+    document.getElementById("impedanceForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const R = parseFloat(document.getElementById("resistencia").value);
+      const L = parseFloat(document.getElementById("inductancia").value);
+      const C = parseFloat(document.getElementById("capacitancia").value);
+      const F = parseFloat(document.getElementById("frecuencia").value);
+
+      const XL = 2 * Math.PI * F * L;
+      const XC = 1 / (2 * Math.PI * F * C);
+      const ModZ = Math.sqrt(R**2 + (XL - XC)**2);
+      const phi = Math.atan((XL - XC) / R);
+      const ReZ = R;
+      const ImZ = XL - XC;
+
+      document.getElementById("xlResult").textContent = `XL: ${XL}`;
+      document.getElementById("xcResult").textContent = `XC: ${XC}`;
+      document.getElementById("modZResult").textContent = `Mod(Z): ${ModZ}`;
+      document.getElementById("phiResult").textContent = `φ (Ángulo de Fase): ${phi}`;
+      document.getElementById("reZResult").textContent = `Parte Real (Re(Z)): ${ReZ}`;
+      document.getElementById("imZResult").textContent = `Parte Imaginaria (Im(Z)): ${ImZ}`;
+    });
+  </script>
+</body>
+</html>
