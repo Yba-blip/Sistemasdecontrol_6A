@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Calculadora de Energía Potencial y Velocidad al Suelo</title>
+</head>
+<body>
+    <h1>Calculadora de Energía Potencial y Velocidad al Suelo</h1>
+
+    <label for="mass">Masa (kg): </label>
+    <input type="number" id="mass" step="0.01"><br><br>
+
+    <label for="height">Altura (m): </label>
+    <input type="number" id="height" step="0.01"><br><br>
+
+    <button onclick="calcularDatos()">Calcular</button><br><br>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularEp(m, h) {
+            const g = 9.81; // Aproximadamente la aceleración debida a la gravedad en la Tierra
+            const Ep = m * g * h;
+            return Ep;
+        }
+
+        function calcularVelocidadAlSuelo(Ep, m) {
+            const Ec = Math.sqrt(2 * Ep / m);
+            return Ec;
+        }
+
+        function calcularDatos() {
+            const masa = parseFloat(document.getElementById("mass").value);
+            const altura = parseFloat(document.getElementById("height").value);
+
+            const ep = calcularEp(masa, altura);
+            const velocidad = calcularVelocidadAlSuelo(ep, masa);
+
+            const resultadoElement = document.getElementById("resultado");
+
+            resultadoElement.innerHTML = `Energía Potencial: ${ep.toFixed(2)} J<br>`;
+            resultadoElement.innerHTML += `Velocidad al Suelo: ${velocidad.toFixed(2)} m/s<br>`;
+
+            if (velocidad > 100) {
+                resultadoElement.innerHTML += "¡Qué rápido!";
+            } else {
+                resultadoElement.innerHTML += "Va lento.";
+            }
+        }
+    </script>
+</body>
+</html>
