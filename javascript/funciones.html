@@ -3,15 +3,16 @@
 <script type="text/javascript">
 
 function hypotenuse(a, b) {
- function square(x) { return x*x; }
-
- return Math.sqrt(square(a) + square(b));
+  return Math.sqrt(square(a) + square(b));
 }
 function secondFunction(){
  var result;
- result = hypotenuse(1,2);
- document.write ( result );
+var b=prompt("ingrese base");
+var h=prompt("ingrese altura");
+ result = hypotenuse(b,h);
+ alert ( result );
 }
+function square(x) { return x*x; }
 
 </script>
 </head>
